@@ -25,7 +25,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 600px;
 }
 main .right-side {
   order: 1;
@@ -71,11 +70,10 @@ main .content__form {
   margin-top: 32px;
 }
 main .content__form__input {
+  width: 100%;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  mix-blend-mode: normal;
-  opacity: 0.5;
   border: none;
   margin-left: 14px;
   padding: 10px;
@@ -100,9 +98,22 @@ main .content__form__button {
 @media (min-width: 1200px) {
   body {
     background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 58%;
   }
   main {
     margin: 0;
+    width: 58%;
+  }
+  main .header {
+    width: 55%;
+    margin: 0 auto;
+    margin-left: 160px;
+  }
+  main .header img {
+    margin: 76px 0 136px;
+    width: 158px;
+    height: 33px;
   }
   main .right-side {
     background-image: url("../images/hero-desktop.jpg");
@@ -114,6 +125,34 @@ main .content__form__button {
     background-size: cover;
   }
   main .content {
+    width: 55%;
     margin: 0 auto;
+    margin-left: 160px;
+  }
+  main .content__heading {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 17.3206px;
+    text-align: left;
+  }
+  main .content__heading--dark {
+    font-size: 64px;
+    line-height: 71px;
+  }
+  main .content__para {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 32px;
+  }
+  main .content__form {
+    margin-top: 40px;
+  }
+  main .content__form__input {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  main .content__form__button {
+    padding: 19px 40px;
   }
 }/*# sourceMappingURL=styles.css.map */

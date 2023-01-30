@@ -27,7 +27,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 600px;
 
   .right-side {
     order: 1;
@@ -77,11 +76,11 @@ main {
       margin-top: 32px;
 
       &__input {
+        width: 100%;
         font-weight: 400;
         font-size: 14px;
         line-height: 28px;
-        mix-blend-mode: normal;
-        opacity: 0.5;
+
         border: none;
         margin-left: 14px;
         padding: 10px;
@@ -105,10 +104,25 @@ main {
 @media (min-width: 1200px) {
   body {
     background-image: url("../images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 58%;
   }
 
   main {
     margin: 0;
+    width: 58%;
+
+    .header {
+      width: 55%;
+      margin: 0 auto;
+      margin-left: 160px;
+
+      img {
+        margin: 76px 0 136px;
+        width: 158px;
+        height: 33px;
+      }
+    }
 
     .right-side {
       background-image: url("../images/hero-desktop.jpg");
@@ -121,7 +135,40 @@ main {
     }
 
     .content {
+      width: 55%;
       margin: 0 auto;
+      margin-left: 160px;
+
+      &__heading {
+        font-size: 64px;
+        line-height: 64px;
+        letter-spacing: 17.3206px;
+        text-align: left;
+
+        &--dark {
+          font-size: 64px;
+          line-height: 71px;
+        }
+      }
+
+      &__para {
+        font-size: 16px;
+        line-height: 28px;
+        text-align: left;
+        margin-top: 32px;
+      }
+
+      &__form {
+        margin-top: 40px;
+        &__input {
+          font-size: 16px;
+          line-height: 28px;
+        }
+
+        &__button {
+          padding: 19px 40px;
+        }
+      }
     }
   }
 }
