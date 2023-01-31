@@ -86,7 +86,6 @@ main {
         mix-blend-mode: normal;
         border: none;
         margin-left: 23px;
-
         &:focus {
           opacity: 1;
         }
@@ -189,7 +188,7 @@ main {
         }
 
         &__button {
-          padding: 20px 46px;
+          padding: 16.5px 46px;
         }
       }
     }
