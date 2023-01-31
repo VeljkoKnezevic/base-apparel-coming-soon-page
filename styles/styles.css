@@ -39,31 +39,31 @@ main .content {
 }
 main .content__heading {
   font-weight: 300;
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 2.5rem;
+  line-height: 2.625rem;
   text-align: center;
   letter-spacing: 10.8254px;
   text-transform: uppercase;
-  color: #ce9898;
+  color: hsl(0deg, 36%, 70%);
   margin: 0;
 }
 main .content__heading--dark {
   font-weight: 600;
-  color: #423a3a;
+  color: hsl(0deg, 6%, 24%);
 }
 main .content__para {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
   text-align: center;
-  color: #ce9898;
+  color: hsl(0deg, 36%, 70%);
   margin: 0;
   margin-top: 16px;
 }
 main .content__form {
   mix-blend-mode: normal;
   opacity: 0.5;
-  border: 1px solid #ce9898;
+  border: 1px solid hsl(0deg, 36%, 70%);
   border-radius: 28px;
   display: flex;
   justify-content: space-between;
@@ -72,27 +72,45 @@ main .content__form {
 main .content__form__input {
   width: 100%;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 28px;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  opacity: 0.5;
+  mix-blend-mode: normal;
   border: none;
-  margin-left: 14px;
-  padding: 10px;
+  margin-left: 23px;
+}
+main .content__form__input:focus {
+  opacity: 1;
 }
 main .content__form__input::-moz-placeholder {
-  color: #ce9898;
+  color: hsl(0deg, 36%, 70%);
 }
 main .content__form__input:-ms-input-placeholder {
-  color: #ce9898;
+  color: hsl(0deg, 36%, 70%);
 }
 main .content__form__input::placeholder {
-  color: #ce9898;
+  color: hsl(0deg, 36%, 70%);
 }
 main .content__form__button {
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
   box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
   border-radius: 28px;
-  border: none;
   padding: 15px 28px;
+  border: none;
+}
+main .content .error {
+  font-weight: 400;
+  font-size: 0.813rem;
+  line-height: 0.813rem;
+  margin-left: 23px;
+  margin-top: 8px;
+  color: hsl(0deg, 93%, 68%);
+}
+main .content .img-error {
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-position: 97% 50%;
 }
 
 @media (min-width: 1200px) {
@@ -130,18 +148,18 @@ main .content__form__button {
     margin-left: 160px;
   }
   main .content__heading {
-    font-size: 64px;
-    line-height: 64px;
+    font-size: 4rem;
+    line-height: 4rem;
     letter-spacing: 17.3206px;
     text-align: left;
   }
   main .content__heading--dark {
-    font-size: 64px;
-    line-height: 71px;
+    font-size: 4rem;
+    line-height: 4.438rem;
   }
   main .content__para {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
     text-align: left;
     margin-top: 32px;
   }
@@ -149,10 +167,10 @@ main .content__form__button {
     margin-top: 40px;
   }
   main .content__form__input {
-    font-size: 16px;
-    line-height: 28px;
+    font-size: 1rem;
+    line-height: 1.75rem;
   }
   main .content__form__button {
-    padding: 19px 40px;
+    padding: 20px 46px;
   }
 }/*# sourceMappingURL=styles.css.map */
